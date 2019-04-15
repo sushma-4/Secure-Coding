@@ -20,8 +20,8 @@ if(isset($_GET["search"]))
 {
 	echo "The results of your search for: ".$_GET["search"];
 	echo "<br /><br /> <i>Sorry No Results Found! </i>";
-	//echo htmlspecialchars($_GET["search"], ENT_QUOTES, 'utf-8');
-	//echo htmlentities($_GET["search"], ENT_QUOTES, 'utf-8');
+	echo htmlspecialchars($_GET["search"], ENT_QUOTES, 'utf-8');
+	echo htmlentities($_GET["search"], ENT_QUOTES, 'utf-8');
 }
 ?>
 </p>
